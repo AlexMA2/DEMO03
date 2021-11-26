@@ -48,6 +48,7 @@ const Escuela = () => {
           'Cantidad de Alumnos necesario'),     
     }),
     onSubmit: () => {
+      postEscuelas(formik.values);
       router.push('/');
     }
   });
